@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator Tanakorn</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <div class="box">
+        <div id="shownumber" class="number">0</div>
+        <div class="row">
+            <div onclick="clearval()" class="btn">AC</div>
+            <div onclick="remove()" class="btn">></div>
+            <div class="btn"></div>
+            <div id="op4" onclick="operator('/', this)" class="btn btn-operator">/</div>
+        </div>
+        <div class="row">
+            <div onclick="number(7)" class="btn btn-number">7</div>
+            <div onclick="number(8)" class="btn btn-number">8</div>
+            <div onclick="number(9)" class="btn btn-number">9</div>
+            <div id="op3" onclick="operator('X', this)" class="btn btn-operator">X</div>
+        </div>
+        <div class="row">
+            <div onclick="number(4)" class="btn btn-number">4</div>
+            <div onclick="number(5)" class="btn btn-number">5</div>
+            <div onclick="number(6)" class="btn btn-number">6</div>
+            <div id="op2" onclick="operator('-', this)" class="btn btn-operator">-</div>
+        </div>
+        <div class="row">
+            <div onclick="number(1)" class="btn btn-number">1</div>
+            <div onclick="number(2)" class="btn btn-number">2</div>
+            <div onclick="number(3)" class="btn btn-number">3</div>
+            <div id="op1" onclick="operator('+', this)" class="btn btn-operator">+</div>
+        </div>
+        <div class="row">
+            <div onclick="number(0)" class="btn btn-number btn-zero">0</div>
+            <div class="btn btn-number"></div>
+            <div onclick="sum()" class="btn btn-operator">=</div>
+        </div>
+    </div>
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
